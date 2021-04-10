@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".HelyszinValaszto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity"
+            android:id="@+id/fragment_helyszin_valaszto">
+
+        <CheckBox
+                android:text="Ami volt azokat ne mutassa ujra"
+                android:layout_width="115dp"
+                android:layout_height="64dp" android:id="@+id/volt_mar"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="64dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="92dp"/>
+        <Button
+                android:text="Uj helyszin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/uj_helyszin"
+                app:layout_constraintTop_toBottomOf="@+id/helyszin"
+                android:layout_marginTop="100dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="148dp"/>
+        <TextView
+                android:text="@string/helyszin"
+                android:layout_width="209dp"
+                android:layout_height="49dp" android:id="@+id/helyszin"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="92dp" android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/volt_mar" android:layout_marginTop="72dp"
+                android:textSize="18sp" android:textStyle="bold" android:textColor="#000000"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
