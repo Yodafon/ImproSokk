@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.addTab(tabLayout.newTab().setText("Calculator"));
         tabLayout.addTab(tabLayout.newTab().setText("Helyszin valaszto"));
+        tabLayout.addTab(tabLayout.newTab().setText("Csengo"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final MyAdapter adapter = new MyAdapter(this,getSupportFragmentManager(), tabLayout.getTabCount());

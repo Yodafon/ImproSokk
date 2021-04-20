@@ -21,11 +21,11 @@ public class MyAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                Calculator calculator = new Calculator();
-                return calculator;
+                return new Calculator();
             case 1:
-                HelyszinValaszto helyszinValaszto = new HelyszinValaszto();
-                return helyszinValaszto;
+                return new HelyszinValaszto();
+            case 2:
+                return new Csengo();
             default:
                 return null;
         }
