@@ -1,6 +1,7 @@
 package org.improsokk;
 
 import android.content.Context;
+import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -38,7 +39,7 @@ public class Csengo extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        soundPool = new SoundPool(10, AudioManager.STREAM_MUSIC, 0);
+        soundPool = new SoundPool.Builder().setMaxStreams(10).build();
         soundPool.setOnLoadCompleteListener(new SoundPool.OnLoadCompleteListener() {
             @Override
             public void onLoadComplete(SoundPool soundPool, int sampleId,
